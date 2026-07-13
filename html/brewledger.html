@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrewLedger - Kalid Hosni</title>
+  <meta name="description"
+    content="A case study on BrewLedger, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+
+  <!-- Open Graph / social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BrewLedger - Kalid Hosni">
+  <meta property="og:description"
+    content="A case study on BrewLedger, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+  <meta property="og:image" content="../assets/images/portfolio/brewledger.jpg">
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrewLedger - Kalid Hosni">
+  <meta name="twitter:description"
+    content="A case study on BrewLedger, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+  <meta name="twitter:image" content="../assets/images/portfolio/brewledger.jpg">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <span class="hamburger-icon">
+                <span class="hamburger-line line-top"></span>
+                <span class="hamburger-line line-middle"></span>
+                <span class="hamburger-line line-bottom"></span>
+              </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item">
+                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Home</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="projects.html" aria-current="true"
+                        class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Projects</a>
+                    </li>
+<li class="header-item">
+                      <a href="index.html#contact" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  Page Wrapper -->
+  <div class="page-wrapper overflow-hidden">
+
+    <!--  Banner Section -->
+    <section class="banner-section banner-inner-section bg-dark no-overlay position-relative overflow-hidden d-flex align-items-end">
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-xl-4">
+              <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-4" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+                <p class="mb-0 text-white fs-5 text-opacity-70">An <span class="text-primary">AI-driven accounting
+                    platform</span> built to give real-time clarity over your finances.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <h1 class="mb-0 fs-16 text-white lh-1">BrewLedger</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Project Detail Section -->
+    <section class="project-detail py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <div class="d-flex flex-column gap-8">
+            <a href="projects.html" class="btn btn-back py-2 ps-3 pe-5" data-aos="fade-up" data-aos-delay="100"
+              data-aos-duration="1000" onclick="if (window.history.length > 1) { window.history.back(); return false; }">
+              <span class="btn-text pe-1">Back</span>
+              <span class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm">
+                <iconify-icon icon="lucide:arrow-up-left" class="icon-rest"></iconify-icon>
+                <iconify-icon icon="lucide:arrow-left" class="icon-hover"></iconify-icon>
+              </span>
+            </a>
+            <div class="d-md-flex align-items-center gap-6 gap-lg-8" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="1000">
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Client</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">BrewAI</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Industry</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">FinTech</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Model</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">SaaS</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2">
+                <p class="mb-0">Date</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">Jun 2023 - Sep 2025</p>
+              </div>
+            </div>
+          </div>
+                    <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Introduction
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-0">BrewLedger is an AI-powered bookkeeping and financial management platform
+                  built by BrewAI, designed for businesses in the US and Australian markets. Best described as Xero
+                  with AI built directly in, BrewLedger set out to eliminate the manual, time-consuming processes
+                  that dominate financial management for most businesses, receipt entry, expense categorisation,
+                  report generation, and replace them with intelligent automation that gets smarter the more you use
+                  it.</p>
+                <p class="fs-5 mb-0 mt-6">As with all BrewAI products, BrewLedger served a dual purpose: delivering
+                  genuine value to end users, from small business owners to accountants managing multiple clients,
+                  while also demonstrating BrewAI's capabilities to attract the investors and enterprise partners the
+                  startup needed to grow. This shaped the ambition of the product from the start: it needed to work
+                  well enough to impress users on the ground, and look credible enough to convince large corporations
+                  and investors that BrewAI was a serious player in the AI-powered FinTech space.</p>
+                <p class="fs-5 mb-0 mt-6">I joined BrewAI as its first designer and a member of the executive team.
+                  As the sole designer on BrewLedger, I was responsible for the full end-to-end design experience,
+                  from research and discovery through to high-fidelity UI across both desktop and mobile, working
+                  closely with a team of engineers and an AI specialist throughout.</p>
+                <img src="../assets/images/portfolio/brewledger.jpg" alt="BrewLedger project thumbnail" class="w-100 object-fit-cover mt-8">
+                <a href="https://www.brewai.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill py-3 px-5 mt-4 d-inline-flex align-items-center gap-2">
+                  <span>Live Preview</span>
+                  <iconify-icon icon="lucide:arrow-up-right" class="fs-5"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">The Problem
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">Most businesses find financial management platforms overwhelming. Complex
+                  interfaces, financial jargon, and a reliance on manual data entry make the day-to-day reality of
+                  bookkeeping far more time-consuming than it needs to be. Even with the automation tools available
+                  in existing platforms, users still spend significant time manually entering receipts, invoices,
+                  and expenses, and still end up relying on a financial analyst or accountant to interpret the data
+                  and produce meaningful reports.</p>
+                <p class="fs-5 mb-3">Additional challenges included:</p>
+                <ul class="fs-5 list-bulleted mb-6 ps-4">
+                  <li class="mb-2">Financial platforms primarily providing historical data rather than predictive
+                    insights that could actually inform business decisions</li>
+                  <li class="mb-2">Limited compatibility with third-party applications, often requiring complex
+                    setup to connect</li>
+                  <li class="mb-2">A lack of accessible forecasting tools for businesses that couldn't afford
+                    dedicated financial analysts</li>
+                  <li class="mb-2">High costs and long turnaround times for the kind of reporting that most
+                    businesses need regularly, week-on-week, month-on-month, annually</li>
+                </ul>
+                <p class="fs-5 mb-0">The opportunity was clear: build a platform that didn't just automate data
+                  entry, but genuinely replaced the work a financial analyst would otherwise do, and make it simple
+                  enough that any business owner could use it without a financial background.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 id="goal-heading" class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">The Goal
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">The primary objective was to redefine financial management for small and
+                  medium businesses by building an intuitive, AI-powered platform that:</p>
+                <ul class="fs-5 list-bulleted mb-0 ps-4">
+                  <li class="mb-2">Instantly processed financial data from scanned receipts and invoices,
+                    eliminating manual entry entirely</li>
+                  <li class="mb-2">Used AI to automatically categorise spend, with a correction-and-learning loop
+                    so the system improved over time</li>
+                  <li class="mb-2">Provided predictive insights and real-time updates to support better financial
+                    decision-making</li>
+                  <li class="mb-2">Delivered instant reporting that replaced work previously requiring a financial
+                    analyst, a single click instead of weeks of manual compilation</li>
+                  <li class="mb-2">Seamlessly integrated with third-party applications for a more connected
+                    financial ecosystem</li>
+                  <li class="mb-2">Supported team collaboration across multiple companies or client accounts
+                    through a shared workspace</li>
+                </ul>
+                <div class="row g-4 mt-8" data-aos="fade-up" data-aos-anchor="#goal-heading" data-aos-delay="200"
+                  data-aos-duration="1000">
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewledger-sitemap.jpg"
+                data-lightbox-alt="Sitemap of the user journey and flow" data-lightbox-caption="Sitemap of the user journey and flow.">
+                <img src="../assets/images/case-studies/brewledger-sitemap.jpg" alt="Sitemap of the user journey and flow" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Sitemap of the user journey and flow.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewledger-desktop-storyboards.jpg"
+                data-lightbox-alt="Storyboards for desktop user flows" data-lightbox-caption="Storyboards for desktop user flows.">
+                <img src="../assets/images/case-studies/brewledger-desktop-storyboards.jpg" alt="Storyboards for desktop user flows" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Storyboards for desktop user flows.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewledger-activate-account-wireframes.jpg"
+                data-lightbox-alt="Activate Account wireframes" data-lightbox-caption="Activate Account wireframes.">
+                <img src="../assets/images/case-studies/brewledger-activate-account-wireframes.jpg" alt="Activate Account wireframes" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Activate Account wireframes.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewledger-design-system-components.jpg"
+                data-lightbox-alt="Design system components" data-lightbox-caption="Design system components.">
+                <img src="../assets/images/case-studies/brewledger-design-system-components.jpg" alt="Design system components" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Design system components.</p>
+            </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">My Involvement
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">I designed BrewLedger end-to-end, starting from competitive research against
+                  established bookkeeping tools, primarily Xero and Finaloop, to identify where existing platforms
+                  fell short and where AI could meaningfully close those gaps rather than just automate existing
+                  processes.</p>
+                <p class="fs-5 mb-6">A key part of the early research involved working with guidance from InCorp
+                  Global's accounting division, whose expertise helped shape the platform's approach to financial
+                  compliance across the US and Australian markets, where regulatory requirements differ in important
+                  ways.</p>
+                <p class="fs-5 mb-3">My contributions included:</p>
+                <ul class="fs-5 list-bulleted mb-0 ps-4">
+                  <li class="mb-2">Conducting user research to understand financial pain points, particularly
+                    around manual data entry, report generation, and the gap between raw financial data and
+                    actionable insight</li>
+                  <li class="mb-2">Competitive benchmarking against Xero, Finaloop, and other bookkeeping tools to
+                    identify design and feature gaps</li>
+                  <li class="mb-2">Creating sitemaps, storyboards, wireframes, user flows, and interactive
+                    prototypes to define and validate the user journey</li>
+                  <li class="mb-2">Designing the receipt and invoice scanning flow, including the AI
+                    auto-categorisation experience and the correction-and-learning loop, where users could reassign
+                    a category and tell the system to remember that preference for similar items in future</li>
+                  <li class="mb-2">Designing the home dashboard, transactions view, profit and loss reporting, and
+                    the "Chat to Account" feature, a conversational interface for querying financial data in plain
+                    English</li>
+                  <li class="mb-2">Designing a Confluence-style team workspace for delegating tasks across multiple
+                    companies or client accounts, supporting accountants managing multiple clients from a single
+                    interface</li>
+                  <li class="mb-2">Designing the onboarding experience across both desktop and mobile</li>
+                  <li class="mb-2">Building out high-fidelity UI components across the design system for desktop
+                    and mobile</li>
+                  <li class="mb-2">Working closely with the engineering team and an AI specialist to ensure
+                    seamless implementation and advocate for AI transparency in a financial context where user trust
+                    was critical</li>
+                  <li class="mb-2">Addressing the regulatory and compliance differences between the US and
+                    Australian financial markets within the design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 id="challenge-heading" class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Biggest Challenge
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">BrewLedger faced several distinct challenges that shaped the design
+                  throughout.</p>
+                <p class="fs-5 mb-6">The financial industry itself was one of the first. Accounting and bookkeeping
+                  are deeply complex domains, and getting to grips with the terminology, workflows, and expectations
+                  of both business owners and professional accountants required real investment in research before
+                  a line of design could be drawn. The product needed to feel credible to financial professionals
+                  while remaining approachable for business owners with no accounting background, a balance that
+                  demanded constant calibration.</p>
+                <p class="fs-5 mb-6">Adapting the platform for two distinct financial markets added a further layer
+                  of complexity. The US and Australia operate under meaningfully different financial regulations,
+                  tax structures, and accounting conventions, and within the US, rules varied further across
+                  individual states. The design had to accommodate those differences without fragmenting the
+                  experience or making either market's version feel like a workaround.</p>
+                <p class="fs-5 mb-6">The most pervasive challenge was trust. Handing financial management, receipts,
+                  invoices, categorisation, reporting, to an AI system is a significant ask for most business owners
+                  and accountants. Designing an experience that felt confident and automated while also giving users
+                  enough visibility and control to trust it required deliberate decisions at every step. The
+                  correction-and-learning loop was one of the most important design solutions here: rather than
+                  just letting users override a wrong categorisation, I designed it so users could teach the system
+                  their preferences, making it feel collaborative rather than opaque.</p>
+                <p class="fs-5 mb-0">Finally, there was the pressure of timing. BrewLedger was being built during
+                  the height of the AI hype cycle, when the window to go to market as a credible early mover was
+                  narrow. Moving quickly was essential, but not at the cost of the quality that would make the
+                  platform trustworthy to the investors and enterprise clients BrewAI needed to attract. Maintaining
+                  rigorous UX standards and design quality under that kind of speed pressure required being
+                  deliberate about where effort went and ruthless about what could wait for a later iteration.</p>
+                <div class="row g-4 mt-8" data-aos="fade-up" data-aos-anchor="#challenge-heading" data-aos-delay="200" data-aos-duration="1000">
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-mobile-onboarding.jpg"
+                data-lightbox-alt="Mobile designs for onboarding" data-lightbox-caption="Mobile designs for onboarding.">
+                <img src="../assets/images/case-studies/brewledger-mobile-onboarding.jpg" alt="Mobile designs for onboarding" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Mobile designs for onboarding.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-mobile-bills-invoices.jpg"
+                data-lightbox-alt="Mobile designs for bills and invoices" data-lightbox-caption="Mobile designs for bills and invoices.">
+                <img src="../assets/images/case-studies/brewledger-mobile-bills-invoices.jpg" alt="Mobile designs for bills and invoices" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Mobile designs for bills and invoices.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-desktop-home-dashboard.jpg"
+                data-lightbox-alt="Desktop design for home dashboard" data-lightbox-caption="Desktop design for home dashboard.">
+                <img src="../assets/images/case-studies/brewledger-desktop-home-dashboard.jpg" alt="Desktop design for home dashboard" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for home dashboard.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-desktop-chat-to-account.jpg"
+                data-lightbox-alt="Desktop design for chat to account" data-lightbox-caption="Desktop design for chat to account.">
+                <img src="../assets/images/case-studies/brewledger-desktop-chat-to-account.jpg" alt="Desktop design for chat to account" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for chat to account.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-desktop-transactions.jpg"
+                data-lightbox-alt="Desktop design for transactions" data-lightbox-caption="Desktop design for transactions.">
+                <img src="../assets/images/case-studies/brewledger-desktop-transactions.jpg" alt="Desktop design for transactions" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for transactions.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewledger-desktop-profit-and-loss.jpg"
+                data-lightbox-alt="Desktop design for profit and loss" data-lightbox-caption="Desktop design for profit and loss.">
+                <img src="../assets/images/case-studies/brewledger-desktop-profit-and-loss.jpg" alt="Desktop design for profit and loss" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for profit and loss.</p>
+            </div>                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Outcome
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">BrewLedger was in the early stages of release and funding during my time at
+                  BrewAI, with measurable results still emerging. However, the product generated growing interest
+                  across Australian, US, and Middle Eastern audiences, and plans for expansion into the UAE market
+                  reflected the platform's broader ambitions.</p>
+                <p class="fs-5 mb-0">The product demonstrated strong demand from investors and potential users
+                  looking for AI-driven financial automation that went beyond what existing bookkeeping tools
+                  offered. The interest from the Middle East in particular opened a conversation about RTL and
+                  Arabic-language versions of the platform, which I also designed in response to that growing
+                  audience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Impact
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-0">BrewLedger represented one of the most complex design challenges I've worked
+                  on, balancing financial compliance, AI trust, multi-market requirements, and genuine usability for
+                  non-technical users, all within a single, coherent product. The design thinking developed here,
+                  particularly around making AI outputs feel trustworthy and the correction-and-learning interaction
+                  model, informed how I approached similar trust challenges in BrewLegal. It also reinforced the
+                  value of grounding design decisions in real competitive research rather than designing in
+                  isolation, the benchmarking against Xero and Finaloop shaped almost every major design call
+                  throughout the project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div>
+                <a href="projects.html" class="btn btn-back py-2 ps-3 pe-5"
+                  onclick="if (window.history.length > 1) { window.history.back(); return false; }">
+                  <span class="btn-text pe-1">Back</span>
+                  <span class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm">
+                    <iconify-icon icon="lucide:arrow-up-left" class="icon-rest"></iconify-icon>
+                    <iconify-icon icon="lucide:arrow-left" class="icon-hover"></iconify-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  Browse Other Projects Section -->
+    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-8">
+              <div class="d-flex flex-column gap-6">
+                <h2 class="mb-0">Browse other projects</h2>
+                <p class="fs-5 mb-0">Here are a few other projects to explore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-projects-slider px-3">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="bridgestone-anz.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/bridgestone-anz.jpg" alt="Bridgestone ANZ project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Bridgestone ANZ</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Automotive</span>
+                    <span class="badge text-dark border">Retail</span>
+                    <span class="badge text-dark border">Ecommerce</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="football-australia.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/football-australia.jpg" alt="Football Australia project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Football Australia</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Sport</span>
+                    <span class="badge text-dark border">Membership</span>
+                    <span class="badge text-dark border">Registrations</span>
+                    <span class="badge text-dark border">SaaS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="qantas-mobile-boarding.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/qantas-mobile-boarding.jpg" alt="Qantas Mobile Boarding project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Qantas Mobile Boarding</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Aviation</span>
+                    <span class="badge text-dark border">Enterprise</span>
+                    <span class="badge text-dark border">Operational</span>
+                    <span class="badge text-dark border">Native</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="brewpredict.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/brewpredict.jpg" alt="BrewPredict project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">BrewPredict</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">AI</span>
+                    <span class="badge text-dark border">Data Analytics</span>
+                    <span class="badge text-dark border">SaaS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-8 pe-xl-5">
+            <h2 class="mb-0 text-white">Build something together?</h2>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" data-email-user="kalid" data-email-domain="kalidhosni.com" class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                <span data-email-text>Get in touch via email</span>
+              </a>
+              <div class="hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
+                Victoria, Australia
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="projects.html">Projects</a></li>
+<li class="mb-2"><a class="link-hover fs-5 text-white" href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="https://www.linkedin.com/in/kalid-hosni/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© Kalid Hosni <span id="copyright-year">2026</span>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <div id="lightbox-overlay" class="lightbox-overlay">
+    <button class="lightbox-close" aria-label="Close">
+      <iconify-icon icon="lucide:x" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+      <iconify-icon icon="lucide:chevron-left" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">
+      <iconify-icon icon="lucide:chevron-right" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption" class="lightbox-caption mb-0"></p>
+    </div>
+  </div>
+
+  <div class="get-template hstack gap-2">
+    
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+    </button>
+  </div>
+
+
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>

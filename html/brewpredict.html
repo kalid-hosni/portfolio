@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrewPredict - Kalid Hosni</title>
+  <meta name="description"
+    content="A case study on BrewPredict, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+
+  <!-- Open Graph / social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BrewPredict - Kalid Hosni">
+  <meta property="og:description"
+    content="A case study on BrewPredict, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+  <meta property="og:image" content="../assets/images/portfolio/brewpredict.jpg">
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrewPredict - Kalid Hosni">
+  <meta name="twitter:description"
+    content="A case study on BrewPredict, an AI-powered product design project, covering the goals, process, and outcomes of the work.">
+  <meta name="twitter:image" content="../assets/images/portfolio/brewpredict.jpg">
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <span class="hamburger-icon">
+                <span class="hamburger-line line-top"></span>
+                <span class="hamburger-line line-middle"></span>
+                <span class="hamburger-line line-bottom"></span>
+              </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item">
+                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Home</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="projects.html" aria-current="true"
+                        class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Projects</a>
+                    </li>
+<li class="header-item">
+                      <a href="index.html#contact" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="../assets/images/svgs/secondary-leaf-green.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  Page Wrapper -->
+  <div class="page-wrapper overflow-hidden">
+
+    <!--  Banner Section -->
+    <section class="banner-section banner-inner-section bg-dark no-overlay position-relative overflow-hidden d-flex align-items-end">
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-xl-4">
+              <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-4" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+                <p class="mb-0 text-white fs-5 text-opacity-70">An <span class="text-primary">AI-powered data
+                    intelligence platform</span> built to turn messy datasets into clear answers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <h1 class="mb-0 fs-16 text-white lh-1">BrewPredict</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Project Detail Section -->
+    <section class="project-detail py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
+          <div class="d-flex flex-column gap-8">
+            <a href="projects.html" class="btn btn-back py-2 ps-3 pe-5" data-aos="fade-up" data-aos-delay="100"
+              data-aos-duration="1000" onclick="if (window.history.length > 1) { window.history.back(); return false; }">
+              <span class="btn-text pe-1">Back</span>
+              <span class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm">
+                <iconify-icon icon="lucide:arrow-up-left" class="icon-rest"></iconify-icon>
+                <iconify-icon icon="lucide:arrow-left" class="icon-hover"></iconify-icon>
+              </span>
+            </a>
+            <div class="d-md-flex align-items-center gap-6 gap-lg-8" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="1000">
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Client</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">BrewAI</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Industry</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">AI / Data</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2 pe-6 pe-lg-8 border-end">
+                <p class="mb-0">Model</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">SaaS</p>
+              </div>
+              <div class="d-flex flex-column gap-2 py-2">
+                <p class="mb-0">Date</p>
+                <p class="mb-0 text-dark fs-5 fw-medium">Feb 2023 - Sep 2025</p>
+              </div>
+            </div>
+          </div>
+                    <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Introduction
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-0">BrewPredict is an AI-powered data intelligence platform built by BrewAI,
+                  designed to give businesses of all sizes access to predictive modelling, real-time analytics, and
+                  automated reporting, without needing a data scientist or technical background to use it. By
+                  integrating data from over 600 sources and combining it with AI-driven forecasting, custom
+                  dashboards, and private LLM summaries, BrewPredict set out to make enterprise-grade data
+                  intelligence accessible to anyone who needed it.</p>
+                <p class="fs-5 mb-0 mt-6">I joined BrewAI as its first designer and a member of the executive team,
+                  working across BrewPredict alongside a team of engineers and an AI specialist. As the sole
+                  designer on the product, I was responsible for the end-to-end design experience from research
+                  through to high-fidelity UI.</p>
+                <img src="../assets/images/portfolio/brewpredict.jpg" alt="BrewPredict project thumbnail" class="w-100 object-fit-cover mt-8">
+                <a href="https://www.brewai.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill py-3 px-5 mt-4 d-inline-flex align-items-center gap-2">
+                  <span>Live Preview</span>
+                  <iconify-icon icon="lucide:arrow-up-right" class="fs-5"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">The Problem
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">As businesses increasingly rely on data to drive decisions, traditional tools
+                  have struggled to keep pace. Working with large datasets was slow, technically demanding, and
+                  expensive, requiring data scientists or analysts to extract insights that most teams needed quickly
+                  and regularly. The barriers to meaningful data analysis were high: complex infrastructure, long
+                  lead times for reports, and no clear way for non-technical users to explore or act on their own
+                  data.</p>
+                <p class="fs-5 mb-0">BrewPredict was conceived to close that gap, bringing the power of predictive
+                  analytics and AI-driven insights to business users who previously had no accessible path to
+                  them.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 id="goal-heading" class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">The Goal
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">The objective was to build an all-in-one data intelligence platform that gave
+                  businesses:</p>
+                <ul class="fs-5 list-bulleted mb-0 ps-4">
+                  <li class="mb-2">Lightning-fast data retrieval and query performance, even across massive datasets</li>
+                  <li class="mb-2">Seamless integration with over 600 structured and unstructured data sources</li>
+                  <li class="mb-2">AI-powered predictive modelling with one-click deployment, no coding required</li>
+                  <li class="mb-2">Plain-English data transformation tools so any user could reshape their data
+                    without technical expertise</li>
+                  <li class="mb-2">Auto-updating dashboards and reports that reflected live data without manual
+                    rebuilding</li>
+                  <li class="mb-2">Transparent, private LLMs that enhanced research accuracy while maintaining a
+                    verifiable audit trail</li>
+                </ul>
+                <div class="row g-4 mt-8" data-aos="fade-up" data-aos-anchor="#goal-heading" data-aos-delay="200"
+                  data-aos-duration="1000">
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewpredict-story-map.jpg"
+                data-lightbox-alt="Story map of the user journey and flow" data-lightbox-caption="Story map of the user journey and flow.">
+                <img src="../assets/images/case-studies/brewpredict-story-map.jpg" alt="Story map of the user journey and flow" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Story map of the user journey and flow.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewpredict-colour-theory-testing.jpg"
+                data-lightbox-alt="User test results on colour theory" data-lightbox-caption="User test results on colour theory.">
+                <img src="../assets/images/case-studies/brewpredict-colour-theory-testing.jpg" alt="User test results on colour theory" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">User test results on colour theory.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewpredict-onboarding-wireframes.jpg"
+                data-lightbox-alt="Onboarding wireframes" data-lightbox-caption="Onboarding wireframes.">
+                <img src="../assets/images/case-studies/brewpredict-onboarding-wireframes.jpg" alt="Onboarding wireframes" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Onboarding wireframes.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="goal" data-lightbox-src="../assets/images/case-studies/brewpredict-design-system-components.jpg"
+                data-lightbox-alt="Design system components" data-lightbox-caption="Design system components.">
+                <img src="../assets/images/case-studies/brewpredict-design-system-components.jpg" alt="Design system components" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Design system components.</p>
+            </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">My Involvement
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">When I joined BrewAI, BrewPredict already existed in a basic form, a
+                  functional but rough product that needed a complete rethink before it could go to market with any
+                  credibility. Rather than a cosmetic refresh, I redesigned the entire user experience and visual
+                  design from the ground up, using the existing product as a reference point for what the platform
+                  needed to do, while completely reimagining how it should feel and function for the people using
+                  it.</p>
+                <p class="fs-5 mb-6">This first phase was about moving fast, establishing a new design direction,
+                  rethinking the information architecture, and creating a coherent, accessible interface for a
+                  technically complex product. Once the platform was live, I moved into a second phase focused on
+                  designing the features that would define BrewPredict's real value:</p>
+                <ul class="fs-5 list-bulleted mb-6 ps-4">
+                  <li class="mb-2">Brew My Data, a plain-English data transformation tool that let users instruct
+                    the platform to reshape their data without writing a single line of code, making complex
+                    transformations accessible to non-technical users for the first time</li>
+                  <li class="mb-2">Auto Data Transformations, once a transformation was defined, it would
+                    automatically reapply whenever the source data updated, removing the need for manual rebuilding</li>
+                  <li class="mb-2">Reporting & Dashboards, custom, auto-updating dashboards that users could build
+                    in seconds and share via secure link, with data refreshing automatically as the underlying
+                    sources changed</li>
+                  <li class="mb-2">Navigation redesign, the original product used a left sidebar that required
+                    users to navigate away from their current workspace to access features. I redesigned this as a
+                    top tab structure, keeping users in context as they moved between data preparation, modelling,
+                    and reporting</li>
+                </ul>
+                <p class="fs-5 mb-6">Throughout both phases I worked closely with the engineering team and an AI
+                  specialist, translating design concepts into shipped features and advocating for user clarity in a
+                  product where the underlying technology was inherently abstract and complex.</p>
+                <p class="fs-5 mb-3">My contributions included:</p>
+                <ul class="fs-5 list-bulleted mb-0 ps-4">
+                  <li class="mb-2">User research to understand how non-technical business users approached data
+                    analysis and where existing tools failed them</li>
+                  <li class="mb-2">Redesigning the full user experience and visual design of the existing product</li>
+                  <li class="mb-2">Creating wireframes, user flows, and interactive prototypes to validate concepts</li>
+                  <li class="mb-2">Designing onboarding flows for both desktop and mobile</li>
+                  <li class="mb-2">Building out high-fidelity UI across the design system for desktop and mobile</li>
+                  <li class="mb-2">Designing the Brew My Data feature, auto-transformation logic, and
+                    reporting/dashboard experience</li>
+                  <li class="mb-2">Collaborating closely with engineers and an AI specialist to ensure seamless
+                    implementation</li>
+                  <li class="mb-2">Advocating for AI trust and transparency in a product where users needed
+                    confidence in automated outputs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 id="challenge-heading" class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Biggest Challenge
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">The core design challenge with BrewPredict was making something genuinely
+                  complex feel genuinely simple, without dumbing it down to the point where it lost its power. The
+                  users we were designing for weren't data scientists, they were business owners, analysts, and
+                  decision-makers who needed insights quickly but didn't want to learn a new technical discipline to
+                  get them.</p>
+                <p class="fs-5 mb-6">That tension between depth and accessibility ran through every design decision:
+                  how much to surface versus how much to hide, how to communicate AI-generated outputs in a way that
+                  felt trustworthy rather than opaque, and how to give users enough control without overwhelming
+                  them with configuration options.</p>
+                <p class="fs-5 mb-0">Trust was another consistent challenge. Convincing business users, and the
+                  investors and enterprise clients evaluating the platform, that AI-driven insights were reliable
+                  and auditable required deliberate design choices around transparency, explainability, and the
+                  audit trail behind every output.</p>
+                <div class="row g-4 mt-8" data-aos="fade-up" data-aos-anchor="#challenge-heading" data-aos-delay="200" data-aos-duration="1000">
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-mobile-onboarding.jpg"
+                data-lightbox-alt="Mobile designs for onboarding" data-lightbox-caption="Mobile designs for onboarding.">
+                <img src="../assets/images/case-studies/brewpredict-mobile-onboarding.jpg" alt="Mobile designs for onboarding" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Mobile designs for onboarding.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-mobile-data-models.jpg"
+                data-lightbox-alt="Mobile designs for data models" data-lightbox-caption="Mobile designs for data models.">
+                <img src="../assets/images/case-studies/brewpredict-mobile-data-models.jpg" alt="Mobile designs for data models" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Mobile designs for data models.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-desktop-create-account.jpg"
+                data-lightbox-alt="Desktop design for Create Account" data-lightbox-caption="Desktop design for Create Account.">
+                <img src="../assets/images/case-studies/brewpredict-desktop-create-account.jpg" alt="Desktop design for Create Account" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for Create Account.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-desktop-dataset-dashboard.jpg"
+                data-lightbox-alt="Desktop design for data set dashboard" data-lightbox-caption="Desktop design for data set dashboard.">
+                <img src="../assets/images/case-studies/brewpredict-desktop-dataset-dashboard.jpg" alt="Desktop design for data set dashboard" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for data set dashboard.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-desktop-data-preparation.jpg"
+                data-lightbox-alt="Desktop design for data preparation" data-lightbox-caption="Desktop design for data preparation.">
+                <img src="../assets/images/case-studies/brewpredict-desktop-data-preparation.jpg" alt="Desktop design for data preparation" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for data preparation.</p>
+            </div>
+            <div class="col-md-6">
+              <a href="javascript:void(0)" class="case-study-img-wrap"
+                data-lightbox-group="challenge" data-lightbox-src="../assets/images/case-studies/brewpredict-desktop-chat-to-data.jpg"
+                data-lightbox-alt="Desktop design for chatting to data" data-lightbox-caption="Desktop design for chatting to data.">
+                <img src="../assets/images/case-studies/brewpredict-desktop-chat-to-data.jpg" alt="Desktop design for chatting to data" class="w-100" loading="lazy">
+                <div class="portfolio-overlay">
+                  <span class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                    <iconify-icon icon="lucide:search" class="fs-8 text-dark"></iconify-icon>
+                  </span>
+                </div>
+              </a>
+              <p class="fs-3 mb-0 mt-2">Desktop design for chatting to data.</p>
+            </div>                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Outcome
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-6">BrewPredict was still in its early stages of release during my time at BrewAI,
+                  but the timing proved significant. As ChatGPT's rise in 2023 drove an explosion of interest in
+                  AI-powered tools, BrewPredict's foundation, private LLMs, data integration, and AI-driven insights,
+                  positioned BrewAI well to respond to that demand. The design system, interaction patterns, and
+                  product thinking developed across BrewPredict directly informed and accelerated the conception of
+                  BrewLegal and BrewLedger, both of which leveraged what had been built and learned here.</p>
+                <p class="fs-5 mb-0">Early adopters provided strong real-world feedback, and the platform was
+                  continuously refined based on that input. The interest generated by BrewPredict, both from users
+                  and from investors and enterprise clients exploring next-generation data intelligence, helped
+                  validate BrewAI's broader direction and set the stage for its most commercially successful
+                  products.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-lg-4">
+              <h2 class="h3 mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Impact
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <p class="fs-5 mb-0">BrewPredict was the product that established BrewAI's design foundation and
+                  proved that complex AI and data tooling could be made genuinely accessible to non-technical users.
+                  The two-phase approach, first establishing a credible, well-designed product to go to market with,
+                  then building the features that would define its real value, taught me how to move quickly without
+                  sacrificing quality, and how to design for trust in a product category where users were being asked
+                  to rely on outputs they couldn't always fully verify themselves.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <div>
+                <a href="projects.html" class="btn btn-back py-2 ps-3 pe-5"
+                  onclick="if (window.history.length > 1) { window.history.back(); return false; }">
+                  <span class="btn-text pe-1">Back</span>
+                  <span class="btn-icon bg-white text-dark round-36 rounded-circle hstack justify-content-center fs-5 shadow-sm">
+                    <iconify-icon icon="lucide:arrow-up-left" class="icon-rest"></iconify-icon>
+                    <iconify-icon icon="lucide:arrow-left" class="icon-hover"></iconify-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  Browse Other Projects Section -->
+    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+      <div class="d-flex flex-column gap-5 gap-xl-11">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-8">
+              <div class="d-flex flex-column gap-6">
+                <h2 class="mb-0">Browse other projects</h2>
+                <p class="fs-5 mb-0">Here are a few other projects to explore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-projects-slider px-3">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="bridgestone-anz.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/bridgestone-anz.jpg" alt="Bridgestone ANZ project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Bridgestone ANZ</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Automotive</span>
+                    <span class="badge text-dark border">Retail</span>
+                    <span class="badge text-dark border">Ecommerce</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="football-australia.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/football-australia.jpg" alt="Football Australia project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Football Australia</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Sport</span>
+                    <span class="badge text-dark border">Membership</span>
+                    <span class="badge text-dark border">Registrations</span>
+                    <span class="badge text-dark border">SaaS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="qantas-mobile-boarding.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/qantas-mobile-boarding.jpg" alt="Qantas Mobile Boarding project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">Qantas Mobile Boarding</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Aviation</span>
+                    <span class="badge text-dark border">Enterprise</span>
+                    <span class="badge text-dark border">Operational</span>
+                    <span class="badge text-dark border">Native</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <a href="brewledger.html" class="portfolio-img d-block position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/brewledger.jpg" alt="BrewLedger project thumbnail" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <span
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+                    </span>
+                  </div>
+                </a>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h3 class="mb-0">BrewLedger</h3>
+                  <div class="hstack gap-2 flex-wrap">
+                    <span class="badge text-dark border">Accounting</span>
+                    <span class="badge text-dark border">FinTech</span>
+                    <span class="badge text-dark border">SaaS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-8 pe-xl-5">
+            <h2 class="mb-0 text-white">Build something together?</h2>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" data-email-user="kalid" data-email-domain="kalidhosni.com" class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                <span data-email-text>Get in touch via email</span>
+              </a>
+              <div class="hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
+                Victoria, Australia
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="projects.html">Projects</a></li>
+<li class="mb-2"><a class="link-hover fs-5 text-white" href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li class="mb-2"><a class="link-hover fs-5 text-white" href="https://www.linkedin.com/in/kalid-hosni/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© Kalid Hosni <span id="copyright-year">2026</span>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <div id="lightbox-overlay" class="lightbox-overlay">
+    <button class="lightbox-close" aria-label="Close">
+      <iconify-icon icon="lucide:x" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+      <iconify-icon icon="lucide:chevron-left" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">
+      <iconify-icon icon="lucide:chevron-right" class="fs-7 text-dark"></iconify-icon>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption" class="lightbox-caption mb-0"></p>
+    </div>
+  </div>
+
+  <div class="get-template hstack gap-2">
+    
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+    </button>
+  </div>
+
+
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
