@@ -16537,9 +16537,11 @@ textarea.form-control-lg {
   height: 100%;
   object-fit: cover;
 }
-.portfolio-img:hover .portfolio-overlay {
-  visibility: visible;
-  transform: translateY(0);
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-img:hover .portfolio-overlay {
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 .portfolio-img .portfolio-overlay {
   position: absolute;
@@ -16667,9 +16669,11 @@ textarea.form-control-lg {
   transition: all 0.5s ease-in-out, transform 0.25s ease, box-shadow 0.25s ease;
   display: none;
 }
-#scrollToTopBtn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+@media (hover: hover) and (pointer: fine) {
+  #scrollToTopBtn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
 }
 
 .services-tab .nav-tabs .nav-item .nav-link {
@@ -16859,9 +16863,11 @@ ul {
   border-color: transparent !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease;
 }
-.toggle-menu:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+@media (hover: hover) and (pointer: fine) {
+  .toggle-menu:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
 }
 .hamburger-icon {
   position: relative;
@@ -16928,17 +16934,19 @@ ul {
 
 /* Back button: shows a diagonal up-left arrow at rest, and swaps to a straight
    left arrow on hover (a genuine icon swap, not a rotation) */
-.btn-back:hover .btn-icon {
-  transform: translate(15%, -50%);
-}
 .btn-back .btn-icon .icon-hover {
   display: none;
 }
-.btn-back:hover .btn-icon .icon-rest {
-  display: none;
-}
-.btn-back:hover .btn-icon .icon-hover {
-  display: inline-flex;
+@media (hover: hover) and (pointer: fine) {
+  .btn-back:hover .btn-icon {
+    transform: translate(15%, -50%);
+  }
+  .btn-back:hover .btn-icon .icon-rest {
+    display: none;
+  }
+  .btn-back:hover .btn-icon .icon-hover {
+    display: inline-flex;
+  }
 }
 
 
@@ -16986,9 +16994,11 @@ img {
   cursor: pointer;
   display: block;
 }
-.case-study-img-wrap:hover .portfolio-overlay {
-  visibility: visible;
-  transform: translateY(0);
+@media (hover: hover) and (pointer: fine) {
+  .case-study-img-wrap:hover .portfolio-overlay {
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 .case-study-img-wrap .portfolio-overlay {
   position: absolute;
@@ -17052,9 +17062,11 @@ img {
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.lightbox-close:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+@media (hover: hover) and (pointer: fine) {
+  .lightbox-close:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
 }
 .lightbox-nav {
   position: absolute;
@@ -17071,9 +17083,11 @@ img {
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.lightbox-nav:hover {
-  transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+@media (hover: hover) and (pointer: fine) {
+  .lightbox-nav:hover {
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
 }
 .lightbox-prev {
   left: 24px;
