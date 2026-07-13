@@ -7725,7 +7725,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .project-meta-item {
-    width: 25%;
+    width: auto;
   }
 }
 .border-lg-end {
@@ -17050,6 +17050,11 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lightbox-close:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 .lightbox-nav {
   position: absolute;
@@ -17064,6 +17069,11 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lightbox-nav:hover {
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 .lightbox-prev {
   left: 24px;
