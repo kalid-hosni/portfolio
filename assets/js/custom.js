@@ -265,3 +265,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (e.key === "ArrowRight") nextBtn.click();
 	});
 });
+
+// Page preloader: fade out once the page (including images) has fully loaded
+(function () {
+	var preloader = document.getElementById("page-preloader");
+	if (!preloader) return;
+	var hidden = false;
+	function hidePreloader() {
+		if (hidden) return;
+		hidden = true;
+		preloader.classList.add("is-hidden");
+		setTimeout(function () {
+			preloader.style.display = "none";
+		}, 400);
+	}
+	window.addEventListener("load", hidePreloader);
+	// Safety net in case the load event is delayed by a slow third-party resource
+	setTimeout(hidePreloader, 4000);
+})();

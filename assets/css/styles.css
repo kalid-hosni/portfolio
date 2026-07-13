@@ -7714,6 +7714,37 @@ textarea.form-control-lg {
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
+/* Project detail meta info (Client/Industry/Model/Date): 2x2 grid on mobile, single row from lg up */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-meta-item {
+  width: 50%;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  .project-meta-item {
+    width: 25%;
+  }
+}
+.border-lg-end {
+  border-right: none !important;
+}
+@media (min-width: 992px) {
+  .border-lg-end {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+}
+.border-lg-top {
+  border-top: none !important;
+}
+@media (min-width: 992px) {
+  .border-lg-top {
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+}
+
 .border-end-0 {
   border-right: 0 !important;
 }
@@ -16473,6 +16504,12 @@ textarea.form-control-lg {
     min-height: 550px;
   }
 }
+@media (max-width: 767.98px) {
+  .banner-inner-section {
+    min-height: 420px;
+    padding-top: 110px;
+  }
+}
 
 .animate-spin {
   animation: spin 1s linear infinite;
@@ -16627,8 +16664,12 @@ textarea.form-control-lg {
 }
 
 #scrollToTopBtn {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out, transform 0.25s ease, box-shadow 0.25s ease;
   display: none;
+}
+#scrollToTopBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .services-tab .nav-tabs .nav-item .nav-link {
@@ -16816,6 +16857,11 @@ ul {
 /* Toggle-menu (hamburger) button: custom 3-line icon that morphs into an X */
 .toggle-menu {
   border-color: transparent !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease;
+}
+.toggle-menu:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 .hamburger-icon {
   position: relative;
@@ -17036,4 +17082,31 @@ img {
     top: 12px;
     right: 12px;
   }
+}
+
+/* Page preloader: shown until the page finishes loading, then fades out */
+#page-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #1F2A2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+#page-preloader img.preloader-leaf {
+  width: 44px;
+  height: auto;
+}
+#page-preloader img.preloader-logo {
+  width: 140px;
+  height: auto;
+}
+#page-preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
