@@ -16769,13 +16769,15 @@ ul {
   background-color: var(--bs-light-gray) !important;
 }
 
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
-  background-color: var(--bs-secondary) !important;
-  border-color: var(--bs-secondary) !important;
-  box-shadow: unset !important;
-}
-.btn-check:checked + .btn .btn-text, :not(.btn-check) + .btn:active .btn-text, .btn:first-child:active .btn-text, .btn.active .btn-text, .btn.show .btn-text {
-  color: var(--bs-white);
+@media (hover: hover) and (pointer: fine) {
+  .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    box-shadow: unset !important;
+  }
+  .btn-check:checked + .btn .btn-text, :not(.btn-check) + .btn:active .btn-text, .btn:first-child:active .btn-text, .btn.active .btn-text, .btn.show .btn-text {
+    color: var(--bs-white);
+  }
 }
 
 .btn {
@@ -16792,9 +16794,6 @@ ul {
   width: fit-content;
   padding: 16px 58px 16px 30px;
 }
-.btn:hover {
-  background-color: var(--bs-secondary);
-}
 .btn .btn-text {
   position: relative;
   z-index: 1;
@@ -16804,10 +16803,6 @@ ul {
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
   padding-inline-end: 15px;
 }
-.btn:hover .btn-text {
-  color: var(--bs-white);
-  transform: translateX(2.5rem);
-}
 .btn .btn-icon {
   position: absolute;
   left: 100%;
@@ -16816,9 +16811,18 @@ ul {
   z-index: 0;
   transition: transform 0.4s ease, left 0.4s ease;
 }
-.btn:hover .btn-icon {
-  left: 0;
-  transform: translate(15%, -50%) rotate(45deg);
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background-color: var(--bs-secondary);
+  }
+  .btn:hover .btn-text {
+    color: var(--bs-white);
+    transform: translateX(2.5rem);
+  }
+  .btn:hover .btn-icon {
+    left: 0;
+    transform: translate(15%, -50%) rotate(45deg);
+  }
 }
 
 .btn-dark {
@@ -17096,15 +17100,16 @@ img {
   right: 24px;
 }
 @media (max-width: 767.98px) {
-  .lightbox-nav {
-    width: 40px;
-    height: 40px;
-  }
   .lightbox-close {
     width: 40px;
     height: 40px;
     top: 12px;
     right: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .lightbox-nav {
+    display: none;
   }
 }
 

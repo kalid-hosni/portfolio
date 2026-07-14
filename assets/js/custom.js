@@ -264,6 +264,24 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (e.key === "ArrowLeft") prevBtn.click();
 		if (e.key === "ArrowRight") nextBtn.click();
 	});
+
+	// Touch swipe navigation (used on mobile/tablet where the arrow buttons are hidden)
+	let touchStartX = 0;
+	let touchEndX = 0;
+	overlay.addEventListener("touchstart", function (e) {
+		touchStartX = e.changedTouches[0].screenX;
+	}, { passive: true });
+	overlay.addEventListener("touchend", function (e) {
+		touchEndX = e.changedTouches[0].screenX;
+		const swipeDistance = touchEndX - touchStartX;
+		const swipeThreshold = 40;
+		if (Math.abs(swipeDistance) < swipeThreshold) return;
+		if (swipeDistance > 0) {
+			prevBtn.click();
+		} else {
+			nextBtn.click();
+		}
+	}, { passive: true });
 });
 
 // Page preloader: fade out once the page (including images) has fully loaded
